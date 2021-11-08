@@ -1,9 +1,9 @@
-import logo from './images/logo.png';
+import logo from "./images/logo.png";
 import React from "react";
 import InputField from "./InputField";
 import SubmitButton from "./Submitbutton";
 import UserStore from "./stores/UserStore";
-import './Loginform.css'
+import "./Loginform.css";
 
 class LoginForm extends React.Component {
   constructor(props) {
@@ -73,45 +73,45 @@ class LoginForm extends React.Component {
     }
   }
   render() {
-    const {isOpen, close} = this.props;
+    const { isOpen, close } = this.props;
     return (
-        <>
+      <>
         {isOpen ? (
-            
-
-            
-      <div className="loginform">
-          <div clasName="container">
-          <div className="logo">
-            <img src={logo} alt="netcha"/>
+          <div onClick={close}>
+            (
+            <div className="loginform">
+              <div clasName="login-container">
+                <div className="logo">
+                  <img src={logo} alt="netcha" />
+                </div>
+                <div className="login_container">
+                  <div>Login</div>
+                  <InputField
+                    type="text"
+                    placeholder="ID"
+                    value={this.state.username ? this.state.username : ""}
+                    onChange={(val) => this.setInputValue("username", val)}
+                  />
+                  <InputField
+                    type="password"
+                    placeholder="PW"
+                    value={this.state.password ? this.state.password : ""}
+                    onChange={(val) => this.setInputValue("password", val)}
+                  />
+                  <SubmitButton
+                    className="submit_btn"
+                    text="login"
+                    disabled={this.state.buttonDisabled}
+                    onClick={() => this.doLogin()}
+                  />
+                  <span>Find PW</span>
+                  <span>Find ID</span>
+                  <span>Register</span>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="login_container">
-            <span>Find PW</span>
-            <span>Find ID</span>
-            <span>Register</span>
-          </div>
-        </div>
-        Login
-        <InputField
-          type="text"
-          placeholder="ID"
-          value={this.state.username ? this.state.username : ""}
-          onChange={(val) => this.setInputValue("username", val)}
-        />
-        <InputField
-          type="password"
-          placeholder="PW"
-          value={this.state.password ? this.state.password : ""}
-          onChange={(val) => this.setInputValue("password", val)}
-        />
-        <SubmitButton
-          className="submit_btn"
-          text="login"
-          disabled={this.state.buttonDisabled}
-          onClick={() => this.doLogin()}
-        />
-      </div>
-      ) : null }
+        ) : null}
       </>
     );
   }

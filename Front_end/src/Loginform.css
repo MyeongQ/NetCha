@@ -1,11 +1,11 @@
 .loginform {
-    position: fixed;
-    align-items: center;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  align-items: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
 }
 body,
 html,
@@ -15,7 +15,9 @@ html,
   width: 100%;
   height: 100%;
 }
-.container {
+
+.login-container {
+  text-align: center;
   background-color: #23305e;
   text-align: center;
   font-size: 28px;
@@ -26,7 +28,12 @@ html,
   justify-content: center;
   border-radius: 10px;
 }
+.login_container div {
+  font-size: 30px;
+  font-weight: bold;
+}
 .login_container {
+  display: inline-block;
   padding-top: 25px;
   width: 323px;
   height: 480px;
@@ -72,7 +79,7 @@ html,
 .submitbutton {
   margin-top: 20px;
 }
-.btn {
+.submitbutton {
   width: 60%;
   height: 50px;
   min-width: 280px;
