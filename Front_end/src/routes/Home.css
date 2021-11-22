@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #23305e;
+  height: 100%;
+}
+
+.App {
+  text-align: center;
+  width: 1500px;
+}
+
+.App-logo {
+  position: absolute;
+  height: 9vmin;
+  left: 0px;
+  top: 0vh;
+  
+}
+
+.App-header {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.ad {
+  position: relative;
+  padding: 40px 80px;
+  
+  z-index: -1;    /* Ad 밑으로 깔기 */
+}
+.ad img {
+  border-radius: 15px;
+}
+.list_container {
+  position: relative;
+  align-items: center;
+  padding-left: 275px;
+  padding-right: 275px;
+}

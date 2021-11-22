@@ -1,0 +1,37 @@
+.Layout {
+    min-height: 80px;
+}
+.Tool-bar {
+    position: absolute;
+    display: flex;
+    width: 1500px;
+    left: 0px;
+    top: 0px;
+    background: #393e46;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.Tool-bar a {
+    position: relative; /* 왼쪽부터 배치 */
+    padding: 20px 40px;
+    margin: 0;
+    font-size: 3vmin;
+    font-family: "Roboto";
+    font-weight: bold;
+    color: #b1acac;
+    text-decoration: none; /* 밑줄 없애기 */
+    left: 250px;
+    top: 0px;
+}
+
+.My-menu a {
+    position: relative; /* 왼쪽부터 배치 */
+    padding: 20px 40px;
+    margin: 0;
+    font-size: 2vmin;
+    font-family: "Roboto";
+    color: rgb(211, 211, 211);
+    text-decoration: none; /* 밑줄 없애기 */
+    left: 450px;
+    top: 25px;
+}

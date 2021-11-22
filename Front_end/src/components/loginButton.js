@@ -20,7 +20,7 @@ class LoginButton extends Component {
   render() {
     return (
       <>
-        <a onClick={this.openModal}>로그인하기</a>
+        <a onClick={this.openModal}>로그인</a>
         <LoginForm isOpen={this.state.isModalOpen} close={this.closeModal} />
       </>
     );

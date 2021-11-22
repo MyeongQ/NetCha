@@ -1,0 +1,15 @@
+.tops__movie {
+    float: left;
+    margin: 10px;
+    padding: 10px 10px;
+    z-index: -1;
+    width: auto;
+    height: 100%;
+}
+
+.tops__movie img{
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: black 5px;
+}

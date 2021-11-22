@@ -1,8 +1,7 @@
-import logo from "./images/logo.png";
 import React from "react";
 import InputField from "./InputField";
 import SubmitButton from "./Submitbutton";
-import UserStore from "./stores/UserStore";
+import UserStore from "../stores/UserStore";
 import "./Loginform.css";
 
 class LoginForm extends React.Component {
@@ -77,14 +76,16 @@ class LoginForm extends React.Component {
     return (
       <>
         {isOpen ? (
-          <div onClick={close}>
-            (
+          <div>
+            
             <div className="loginform">
               <div clasName="login-container">
-                <div className="logo">
-                  <img src={logo} alt="netcha" />
-                </div>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
                 <div className="login_container">
+                  
                   <div>Login</div>
                   <InputField
                     type="text"
@@ -104,6 +105,10 @@ class LoginForm extends React.Component {
                     disabled={this.state.buttonDisabled}
                     onClick={() => this.doLogin()}
                   />
+                  <button className="close-button" onClick={close}>
+                    close
+                  </button>
+                  <br/>
                   <span>Find PW</span>
                   <span>Find ID</span>
                   <span>Register</span>
